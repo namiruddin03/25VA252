@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //primitive : sinle value (immutive)
+        // string / number / boolean / null / undefined / symbol / bigint
+
+        let name="Namiruddin";
+        console.log(name);
+        console.log(typeof(name));
+        let age=18;
+        let ismarried=false;
+        let address=null;
+        console.log(typeof(age));
+        console.log(typeof(ismarried));
+
+        // BigInt
+        let salary=BigInt(45346786348767463843897)
+        console.log(salary);
+        // symbol
+        let name1=Symbol("kaif");
+        let name2=Symbol("kaif");
+        console.log(name1==name2);
+
+
+        // non-primitive /reference / object mutable values
+        // Object / array / function
+        // obeject - An object is a collection of its keys and values.  
+        let student={ 
+            name:"Namiruddin",
+            age:18,
+            ismarried:false,
+            address:{
+                streetNo:710,
+                area:"Sikandrabad",
+                city:"Bulandshahr",
+                pincode:203205
+        },
+        course:"B.Tech",
+        branch:"CSE",
+        year:2025,
+        getInfo:function(){
+            return "my Education is " + student.course + " in " + student.branch + " and year is " + student.year;
+        }
+        };
+        console.log(student);
+        // accessing object properties
+        // using dot notation
+        console.log(student.name + " " + student.age + " " + student.address);
+        console.log(typeof(student));  
+        console.log(student.getInfo());
+
+        // delete object properties in object
+        console.log("name" in student); 
+        // delete object properties
+        console.log(delete student.name);
+        console.log('name' in student);
+   
+        
+    </script>
+</body>
+</html>
