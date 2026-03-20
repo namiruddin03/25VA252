@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JS</title>
+</head>
+<body>
+    <script>
+    // In JavaScript, a loop is a programming construct that allows a block of code to be executed repeatedly as long as a specified condition remains true.
+
+    let studentList=["Namiruddin","Kaif","Satyarth","Shivam","Rahul","Rohit"];
+
+    // for(let i=0; i<studentList.length; i++){
+    //     console.log(studentList[i]);
+    // }
+
+
+    // while------used when the no. of iterations is uncertain, and the loop should continue until a specific condition is met.
+    
+    // let x=0;
+    // while(x<studentList.length){
+    //     console.log(studentList[x]);
+    //     x++;
+    // }
+
+    // for ....of loop------used to iterate over iterable objects like arrays, strings, maps, sets, etc. It provides a simpler syntax for iterating through the elements of a collection.
+    for(let y of studentList){
+        console.log(y);
+    }   
+     
+
+    let student={ 
+            name:"Namiruddin",
+            age:18,
+            ismarried:false,
+            address:{
+                streetNo:710,
+                area:"Sikandrabad",
+                city:"Bulandshahr",
+                pincode:203205
+        },
+        };
+        for (i in student){
+            console.log(student[i]);
+        }
+    </script>
+</body>
+</html>

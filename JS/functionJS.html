@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in JS</title>
+</head>
+<body>
+    <script>
+
+        function demo(){
+            console.log("Hello JS");
+        }
+        demo();
+
+        //Function in JS
+        
+        function demo1(text){
+            console.log("Hello " + text);
+        }
+        demo1("React");
+
+        function greet(name){
+            return "Hello " + name;
+        }
+        let result=greet("Namiruddin");
+        console.log(result);
+
+        // funtion with default parameter
+        function add(a,b=10){
+            console.log("addition of two no. is : " + (a+b));
+        }
+        add(3);
+
+        // annomyous function : an function without name is called annomyous function
+        let cal=function(){
+            var num1=5;
+            var num2=10;
+            var res=num1*num2;
+            console.log("mulyiply of num1 and num2 is : " + res);
+            
+
+        }
+        cal();
+
+
+        // arrow function : an arrow function is a shorter syntax for writing function expression in JS
+        let div=(x,y)=>{
+            var num1=x;
+            var num2=y;
+            var res=x/y;
+            console.log("divison is " + res);
+
+        }
+    div(12,3);
+        
+    // arrow function with single line statement
+
+    let msg=()=>console.log("Hello ABES");
+    msg();
+        
+    // callback funtion: A callback function is a function passed as an argument into another function.
+
+    function sub(callback){
+        var num1=20;
+        var num2=10;
+        var res=num1-num2;
+        callback(res);
+    }
+    function displayRes(res){
+        console.log("Result is : " + res);
+    }
+    sub(displayRes);
+
+    function msg1(){
+        console.log("Hello ABES");
+    }
+    setTimeout(msg1,2000); // it will call msg1 function after 2 second
+    </script>
+</body>
+</html>

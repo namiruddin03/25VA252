@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let age = 23;
+    if(age>=18){
+        console.log("valid age for vote casting");}
+    // else{
+    //     console.log("invalid age for vote casting");
+    // } 
+    let myAge=45;
+    if(myAge>=18 ){
+        console.log("valid age for vote casting");}
+    else{
+        console.log("invalid age for vote casting");
+    }   
+
+    // swich case
+    let grade="C";
+    switch(grade){
+        case "A":result="first division";
+        break;
+        case "B":result="second division";
+        break;
+        case "C":result="third division";
+        break;
+        default:result="fail";
+    }
+    console.log(result);
+
+
+    // if else if else
+
+        let marks=98;
+        if(marks>=60){
+            console.log("First div marks");
+        }
+        else if(marks<60 && marks>=40){
+            console.log("Second div marks");
+        }
+        else if(marks<40 && marks>=30){
+            console.log("Third div marks");
+        }
+        else{
+            console.log("Fail marks");
+        }
+
+
+
+
+
+        let mark = [98, 78, 45, 32, 25];
+         let sum=0;
+         let avg=0;
+            for(let i=0; i<mark.length; i++){
+                sum+=mark[i];
+            }
+            avg=sum/mark.length;
+            console.log("sum is " + sum);
+            console.log("avg is " + avg);
+             if(avg>=60){
+                console.log("First div marks");
+            }
+            else if(avg<60 && avg>=40){         
+                console.log("Second div marks");
+            }
+            else if(avg<40 && avg>=30){
+                console.log("Third div marks");
+            }
+            else{
+                console.log("Fail marks");
+            }
+            
+    </script>
+</body>
+</html>
