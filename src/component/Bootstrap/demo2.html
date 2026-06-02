@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <h1 class="text-3xl bg-red-200 font-bold underline">
+      Hello world!
+    </h1>
+    <div class="w-7xl mx-auto bg-amber-800 grid grid-cols-4 lg:grid-cols-2 sm:grid-cols-1 gap-4 p-1 space-y-1" style="height: 800px;"> 
+      <div class="box bg-cyan-400">
+        <h2>Box 1</h2>
+        <p class="font-mono text-4xl italic font-medium text-orange-500 line-through indent-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+      </div>
+      <div class="box bg-amber-400 bg-linear-to-bl from-amber-400 to-yellow-400">
+        <h2>Box 2</h2>
+        <p class="inline-3xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe odit deserunt omnis quo sint, tenetur veritatis vel ducimus minima, optio, temporibus aliquam reiciendis! Dignissimos debitis ex dolores quis voluptatum ut.</p>
+      </div>
+      <div class="h-14 bg-linear-to-t from-sky-500 to-indigo-500" style="height: 400px;">
+        <h2>Box 3</h2>
+      </div>
+      <div class="box bg-lime-400">
+        <h2>Box 4</h2>
+      </div>
+ <div class="grid grid-cols-3 gap-4">
+  <div class="col-span-4 col-start-2 bg-lime-400">01</div>
+  <div class="col-start-1 col-end-3 bg-amber-400">02</div>
+  <div class="col-span-2 col-end-7 bg-cyan-400">03</div>
+  <div class="col-start-1 col-end-7 bg-rose-400">04</div>
+  <div class="col-span-4 col-start-2 bg-lime-400">05</div>
+  <div class="col-start-1 col-end-3 bg-amber-400">06</div>
+  <div class="col-span-2 col-end-7 bg-cyan-400">07</div>
+  <div class="col-start-1 col-end-7 bg-rose-400">08</div>
+</div>
+    </div>
+  </body>
+</html>
